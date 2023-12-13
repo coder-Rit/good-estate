@@ -14,9 +14,9 @@ if (process.env.NODE_ENV !== "PRODUCTION") {
 const app = express();
 
 
-app.use(cors()
+app.use(cors())
 mongoose
-  .connect("mongodb://localhost:27017/eCommers")
+  .connect("mongodb+srv://postmantesting205:WsexBYN9jUvDva4U@freecluster.mxy86qc.mongodb.net/?retryWrites=true&w=majority")
   .then(() => {
     console.log('Connected to MongoDB!');
   })
